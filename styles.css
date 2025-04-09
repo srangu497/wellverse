@@ -196,7 +196,7 @@ button {
     color: #007BFF;
 }
 
-.result-item p {
+result-item p {
     margin: 5px 0;
     font-size: 0.9rem;
     color: #555;
@@ -209,5 +209,77 @@ button {
 }
 
 .result-item a:hover {
+    text-decoration: underline;
+}
+
+select {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#emergency-instructions {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#emergency-instructions h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+#emergency-instructions ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+#emergency-instructions li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+.trusted-websites {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.trusted-websites li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trusted-websites li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.trusted-websites a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.trusted-websites a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }

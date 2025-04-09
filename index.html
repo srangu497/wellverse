@@ -32,20 +32,42 @@
                 <button onclick="searchCondition()">Search</button>
                 <div id="condition-results"></div>
             </section>
-            <section id="symptom-checker" class="feature">
-                <h2>Symptom Checker</h2>
-                <p>Input your symptoms to get potential diagnoses and suggestions for next steps.</p>
-                <button>Start Symptom Checker</button>
-            </section>
+
             <section id="emergency-guide" class="feature">
                 <h2>Emergency Medical Guide</h2>
-                <p>Quickly find step-by-step instructions for handling medical emergencies.</p>
-                <button>View Emergency Guide</button>
+                <p>Select a medical condition to view step-by-step instructions for handling emergencies.</p>
+                <select id="condition-select" onchange="showEmergencyGuide()">
+                    <option value="">-- Select a Condition --</option>
+                </select>
+                <div id="emergency-instructions"></div>
             </section>
             <section id="health-news" class="feature">
                 <h2>Health News and Misinformation Checker</h2>
                 <p>Stay updated with trustworthy medical news and verify health claims.</p>
-                <button>Read Latest News</button>
+                <div id="news-results"></div>
+            
+                <h3>Trusted Health Websites</h3>
+                <ul class="trusted-websites">
+                    <li><a href="https://www.medicalnewstoday.com/" target="_blank">Medical News Today</a></li>
+                    <li><a href="https://www.medscape.com/" target="_blank">Medscape</a></li>
+                    <li><a href="https://www.medpagetoday.com/" target="_blank">MedPage Today</a></li>
+                    <li><a href="https://www.healthline.com/" target="_blank">Healthline</a></li>
+                    <li><a href="https://www.webmd.com/" target="_blank">WebMD</a></li>
+                    <li><a href="https://www.bbc.com/news/health" target="_blank">BBC Health News</a></li>
+                    <li><a href="https://www.cnn.com/health" target="_blank">CNN Health</a></li>
+                    <li><a href="https://www.statnews.com/" target="_blank">STAT News</a></li>
+                    <li><a href="https://www.everydayhealth.com/" target="_blank">Everyday Health</a></li>
+                    <li><a href="https://www.sciencedaily.com/news/health_medicine/" target="_blank">ScienceDaily: Health & Medicine</a></li>
+                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a></li>
+                    <li><a href="https://jamanetwork.com/" target="_blank">JAMA Network</a></li>
+                    <li><a href="https://www.cochranelibrary.com/" target="_blank">Cochrane Library</a></li>
+                    <li><a href="https://www.hhmi.org/news" target="_blank">Howard Hughes Medical Institute (HHMI)</a></li>
+                    <li><a href="https://www.cdc.gov/" target="_blank">Centers for Disease Control and Prevention (CDC)</a></li>
+                    <li><a href="https://www.who.int/news-room" target="_blank">World Health Organization (WHO)</a></li>
+                    <li><a href="https://www.health.harvard.edu/" target="_blank">Harvard Health</a></li>
+                    <li><a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a></li>
+                    <li><a href="https://health.clevelandclinic.org/" target="_blank">Cleveland Clinic</a></li>
+                </ul>
             </section>
             <section id="wellness-hub" class="feature">
                 <h2>Wellness and Prevention Hub</h2>

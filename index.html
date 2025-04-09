@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellverse - Your Health Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Wellverse</h1>
+    <nav>
+      <ul>
+        <li><a href="#condition-lookup">Condition Lookup</a></li>
+        <li><a href="#symptom-checker">Symptom Checker</a></li>
+        <li><a href="#emergency-guide">Emergency Guide</a></li>
+        <li><a href="#health-news">Health News</a></li>
+        <li><a href="#wellness-hub">Wellness Hub</a></li>
+        <li><a href="#mental-health">Mental Health</a></li>
+        <li><a href="#caregiver-resources">For Caregivers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="condition-lookup">
+      <h2>Condition Lookup and Treatment Guide</h2>
+      <input type="text" id="condition-search" placeholder="Search for a condition...">
+      <button onclick="searchCondition()">Search</button>
+      <div id="condition-results"></div>
+    </section>
+
+    <section id="symptom-checker">
+      <h2>Symptom Checker</h2>
+      <textarea id="symptoms" placeholder="Enter your symptoms..."></textarea>
+      <button onclick="checkSymptoms()">Check Symptoms</button>
+      <div id="symptom-results"></div>
+    </section>
+
+    <section id="emergency-guide">
+      <h2>Emergency Medical Guide</h2>
+      <p>Find step-by-step instructions for handling medical emergencies.</p>
+      <button onclick="showEmergencyGuide()">View Guide</button>
+      <div id="emergency-instructions"></div>
+    </section>
+
+    <section id="health-news">
+      <h2>Health News and Misinformation Checker</h2>
+      <div id="news-feed"></div>
+    </section>
+
+    <section id="wellness-hub">
+      <h2>Wellness and Prevention Hub</h2>
+      <p>Explore resources for maintaining a healthy lifestyle.</p>
+    </section>
+
+    <section id="mental-health">
+      <h2>Mental Health Support</h2>
+      <p>Access resources and self-care strategies for mental health awareness and support.</p>
+    </section>
+
+    <section id="caregiver-resources">
+      <h2>For Caregivers and Families</h2>
+      <p>Find resources and tips for managing the health of loved ones.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wellverse. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

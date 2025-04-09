@@ -5,106 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health and Wellness Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-        }
-        .feature {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Health and Wellness Hub</h1>
-        <p>Your one-stop solution for health information and resources</p>
-    </header>
-    <nav>
-        <a href="#condition-lookup">Condition Lookup</a>
-        <a href="#symptom-checker">Symptom Checker</a>
-        <a href="#emergency-guide">Emergency Guide</a>
-        <a href="#health-news">Health News</a>
-        <a href="#wellness-hub">Wellness Hub</a>
-        <a href="#mental-health">Mental Health</a>
-        <a href="#caregivers">For Caregivers</a>
-    </nav>
-    <section id="condition-lookup" class="feature">
-        <h2>Condition Lookup and Treatment Guide</h2>
-        <p>Search for medical conditions and get reliable information on symptoms, causes, and treatments.</p>
-        <input type="text" placeholder="Search for a condition..." />
-        <button>Search</button>
-        <div id="condition-results"></div>
-    </section>
-    <section id="symptom-checker" class="feature">
-        <h2>Symptom Checker</h2>
-        <p>Input your symptoms to get potential diagnoses and suggestions for next steps.</p>
-        <button>Start Symptom Checker</button>
-    </section>
-    <section id="emergency-guide" class="feature">
-        <h2>Emergency Medical Guide</h2>
-        <p>Quickly find step-by-step instructions for handling medical emergencies.</p>
-        <button>View Emergency Guide</button>
-    </section>
-    <section id="health-news" class="feature">
-        <h2>Health News and Misinformation Checker</h2>
-        <p>Stay updated with trustworthy medical news and verify health claims.</p>
-        <button>Read Latest News</button>
-    </section>
-    <section id="wellness-hub" class="feature">
-        <h2>Wellness and Prevention Hub</h2>
-        <p>Explore resources for maintaining a healthy lifestyle, including diet, exercise, and mental health tips.</p>
-        <button>Explore Wellness Tips</button>
-    </section>
-    <section id="mental-health" class="feature">
-        <h2>Mental Health Support</h2>
-        <p>Access resources and self-care strategies for mental health awareness and support.</p>
-        <button>Get Mental Health Support</button>
-    </section>
-    <section id="caregivers" class="feature">
-        <h2>For Caregivers and Families</h2>
-        <p>Find resources and tips for managing the health of loved ones with chronic conditions or special needs.</p>
-        <button>View Caregiver Resources</button>
-    </section>
+    <div class="container">
+        <!-- Vertical Navigation Bar -->
+        <nav class="sidebar">
+            <h1 class="logo">Wellverse</h1>
+            <ul>
+                <li><a href="#condition-lookup">Condition Lookup</a></li>
+                <li><a href="#symptom-checker">Symptom Checker</a></li>
+                <li><a href="#emergency-guide">Emergency Guide</a></li>
+                <li><a href="#health-news">Health News</a></li>
+                <li><a href="#wellness-hub">Wellness Hub</a></li>
+                <li><a href="#mental-health">Mental Health</a></li>
+                <li><a href="#caregivers">For Caregivers</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <section id="condition-lookup" class="feature">
+                <h2>Condition Lookup and Treatment Guide</h2>
+                <p>Search for medical conditions and get reliable information on symptoms, causes, and treatments.</p>
+                <input type="text" placeholder="Search for a condition..." />
+                <button onclick="searchCondition()">Search</button>
+                <div id="condition-results"></div>
+            </section>
+            <section id="symptom-checker" class="feature">
+                <h2>Symptom Checker</h2>
+                <p>Input your symptoms to get potential diagnoses and suggestions for next steps.</p>
+                <button>Start Symptom Checker</button>
+            </section>
+            <section id="emergency-guide" class="feature">
+                <h2>Emergency Medical Guide</h2>
+                <p>Quickly find step-by-step instructions for handling medical emergencies.</p>
+                <button>View Emergency Guide</button>
+            </section>
+            <section id="health-news" class="feature">
+                <h2>Health News and Misinformation Checker</h2>
+                <p>Stay updated with trustworthy medical news and verify health claims.</p>
+                <button>Read Latest News</button>
+            </section>
+            <section id="wellness-hub" class="feature">
+                <h2>Wellness and Prevention Hub</h2>
+                <p>Explore resources for maintaining a healthy lifestyle, including diet, exercise, and mental health tips.</p>
+                <button>Explore Wellness Tips</button>
+            </section>
+            <section id="mental-health" class="feature">
+                <h2>Mental Health Support</h2>
+                <p>Access resources and self-care strategies for mental health awareness and support.</p>
+                <button>Get Mental Health Support</button>
+            </section>
+            <section id="caregivers" class="feature">
+                <h2>For Caregivers and Families</h2>
+                <p>Find resources and tips for managing the health of loved ones with chronic conditions or special needs.</p>
+                <button>View Caregiver Resources</button>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
